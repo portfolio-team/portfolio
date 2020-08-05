@@ -15,7 +15,7 @@ import { WorksComponent } from './components/works/works.component';
     AppComponent,
     HeaderComponent,
     TopviewComponent,
-    WorksComponent
+    WorksComponent,
   ],
   imports: [
     BrowserModule,
