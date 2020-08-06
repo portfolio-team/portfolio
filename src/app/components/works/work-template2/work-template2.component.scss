@@ -1,0 +1,18 @@
+p{margin: 0;padding: 0;line-height: 1.8}
+
+#left-box {
+  width: 60%;
+  font-size: 20px;
+  padding: 25px;
+  overflow: hidden;/*float解除*/
+}
+#left-box .space {
+  float: left;/*画像の位置を右下にしたい場合はright*/
+  height: 5.3em/*画像上の余白の高さ*/
+}
+#left-box img{
+  width: 600px;
+  float: left;/*画像の位置を右下にしたい場合はright*/
+  clear: both;/*.spaceのfloat解除*/
+  margin: 1.2em 1.2em 0 0;/*画像の周りの余白*/
+}
