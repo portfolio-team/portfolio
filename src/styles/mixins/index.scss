@@ -1,0 +1,12 @@
+@mixin worksPageNo() {
+  font-size: 20px;
+  text-align: center;
+}
+
+@mixin worksText() {
+  font-size: $works-text-fontsize;
+  margin: 0;
+  padding: 0;
+  line-height: $works-text-line-height;
+}
+

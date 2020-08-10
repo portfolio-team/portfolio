@@ -25,7 +25,6 @@ export class WorksComponent implements OnInit {
   factory2: ComponentFactory<WorkTemplate2Component>;
   factory3: ComponentFactory<WorkTemplate3Component>;
 
-  worksList:workParam[];
   workImgList:string[]=[];
   constructor(
     private dataService: DataService,
@@ -36,27 +35,35 @@ export class WorksComponent implements OnInit {
   ngOnInit(): void {
     this.dataService.getWorks()
     .subscribe(data => {
-      this.worksList = data['contents'];
       this.factory1 = this.resolver.resolveComponentFactory(WorkTemplate1Component);
       this.factory2 = this.resolver.resolveComponentFactory(WorkTemplate2Component);
       this.factory3 = this.resolver.resolveComponentFactory(WorkTemplate3Component);
-      this.getWorkContent();
+      this.getWorkContent(data['contents']);
     });
 
   }
   //-----------------------
   //worksのコンテンツDOM作成
   //-----------------------
-  getWorkContent(): void{
-    for(let i = 1; i < this.worksList.length + 1; i++){
-      //順番(works_num)が一致するworkを取り出すS
-      let work = this.worksList.filter(work => {
+  getWorkContent(worksData): void{
+    let worksList:workParam[]=[];
+    for(let i = 1; i < worksData.length + 1; i++){
+      //順番(works_num)が一致するworkを取り出す
+      let work = worksData.filter(work => {
         return ((work.works_num) === i);
       });
       let src = work[0].works_img.url;
+      worksList.push(work);
       this.workImgList.push(src);
+    }
+    this.renderWorks(worksList);
+  }
+
+  async renderWorks(worksList) {
+    for (let work of worksList) {
+      let src = work[0].works_img.url;
       //画像サイズから縦向き・横向き判定、テキスト量判定
-      this.loadImage(src)
+      await this.loadImage(src)
       .then(res=> {
         let portrait = (res["height"] > res["width"])? true:false;
         if(portrait){

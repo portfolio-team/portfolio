@@ -1,0 +1,25 @@
+@import 'common';
+
+.text{
+  @include worksText();
+}
+.container {
+  display: flex;
+  width: $works-container-width;
+  padding: 25px;
+  overflow: hidden;/*float解除*/
+}
+.container img{
+  width: 500px;
+  float: left;/*画像の位置を右下にしたい場合はright*/
+  margin: 0 0 0 1.2em;/*画像の周りの余白*/
+}
+.initialChar{
+  float: left;/*画像の位置を右下にしたい場合はright*/
+  font-size: 40px;
+  margin: 0.3em 0.5em 0 0.4em;
+}
+
+.pageNo{
+  @include worksPageNo();
+}

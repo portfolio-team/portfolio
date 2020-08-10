@@ -1,18 +1,25 @@
-p{margin: 0;padding: 0;line-height: 1.8}
+@import 'common';
 
-#left-box {
-  width: 60%;
-  font-size: 20px;
+.text{
+  @include worksText();
+}
+
+.container {
+  width: $works-container-width;
   padding: 25px;
   overflow: hidden;/*float解除*/
 }
-#left-box .space {
+.container img{
+  width: 500px;
   float: left;/*画像の位置を右下にしたい場合はright*/
-  height: 5.3em/*画像上の余白の高さ*/
-}
-#left-box img{
-  width: 600px;
-  float: left;/*画像の位置を右下にしたい場合はright*/
-  clear: both;/*.spaceのfloat解除*/
   margin: 1.2em 1.2em 0 0;/*画像の周りの余白*/
+}
+.initialChar{
+  float: left;/*画像の位置を右下にしたい場合はright*/
+  font-size: 40px;
+  margin: 0.3em 0.5em 0 0.4em;
+}
+
+.pageNo{
+  @include worksPageNo();
 }

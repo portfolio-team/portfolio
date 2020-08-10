@@ -1,0 +1,28 @@
+@import 'common';
+
+.text{
+  @include worksText();
+  transform: rotate(-180deg);
+  width: 100%;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
+}
+
+.container {
+  display: flex;
+  width: $works-container-width;
+  padding: 25px;
+  overflow: hidden;/*float解除*/
+}
+.container img{
+  width: 500px;
+  float: left;/*画像の位置を右下にしたい場合はright*/
+  margin: 0 0 0 1.2em;/*画像の周りの余白*/
+}
+
+.pageNo{
+  @include worksPageNo();
+}
+
+
