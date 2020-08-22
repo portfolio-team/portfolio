@@ -9,6 +9,8 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
 import { HeaderComponent } from './components/header/header.component';
 import { TopviewComponent } from './components/topview/topview.component';
 import { WorksComponent } from './components/works/works.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { WorksComponent } from './components/works/works.component';
     HeaderComponent,
     TopviewComponent,
     WorksComponent,
+    ContactComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
