@@ -1,16 +1,16 @@
-@import 'common';
+
 
 .Header-title{
   font-family: 'Athelas';
-  font-size: 23px;
-  margin-left: 20px;
+  font-size: 15px;
+  margin: 17px 25px;
 }
 
 @media screen and (max-width: 750px) {
   .Header-title{
     font-family: 'Athelas';
     font-size: 23px;
-    margin-left: 20px;
+    margin: 25px 24px;;
   }
 }
 
