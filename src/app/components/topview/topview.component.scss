@@ -1,0 +1,17 @@
+
+
+	img{
+    width: 100%;
+    margin-bottom: 500px;
+  }
+
+
+
+@media screen and (max-width: 750px) {
+  img {
+    max-width: 100%;
+    object-fit : none;
+    object-position : 22% 50%;
+    margin-bottom: 1032px;
+  }
+}
