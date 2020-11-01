@@ -2,14 +2,14 @@
 
 .Header-title{
   font-family: 'Athelas';
-  font-size: 15px;
+  font-size: 1.5vw;
   margin: 17px 25px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .Header-title{
     font-family: 'Athelas';
-    font-size: 23px;
+    font-size: 3vw;
     margin: 25px 24px;;
   }
 }

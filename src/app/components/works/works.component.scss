@@ -3,63 +3,68 @@
 
 
 .works-boxes{
-  width: 399px;
-  height: 493px;
-  margin: 0px auto;
+  width: 100%;
+  height: auto;
+ 
 
-p.Works-title{
+.Works-title{
   font-family: 'Book Antiqua';
   color: #2E2D2D;
   letter-spacing: 3.25px;
-  font-size: 25px;
+  font-size: 2vw;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 15vh;
 }
+
 .works-box{
   display: flex;
+  width: 55%;
   justify-content: space-around;
-  float:left;
   flex-wrap: wrap;
+  margin: 0 auto;
+}
   
-  li{
-    list-style: none;
+li{
+  list-style: none;
+  
+}
 
-    img{
-      width: 100px;
-      height: 100px;
-      margin-bottom: 50px;
-    }
-  }
+img{
+  margin-bottom: 50px;
+  width: 100%;
+  height: auto;
  }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
+ 
+
   .works-boxes{
-    width: 680px;
-    height: 850px;
-    margin: 0px auto;
-  
+    width: 100%;
+    height: auto;
+
+
   p.Works-title{
     font-family: 'Book Antiqua';
-    font-size: 37px;
+    font-size: 4vw;
     text-align: center;
-    margin-bottom: 150px;
+    margin-bottom: 10vh;
   }
   .works-box{
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    float:left;
-    flex-wrap: wrap;
-    
+    margin: 0px;
+  }
     li{
       list-style: none;
-  
-      img{
-        width: 200px;
-        height: 200px;
+      width: 30%;
+    }
+      
+      img{ 
+        max-width: 100%;
+        height: auto;
         margin-bottom: 40px;
       }
     }
-   }
-  }
-}
+  } 
