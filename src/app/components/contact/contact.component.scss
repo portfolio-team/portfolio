@@ -1,9 +1,10 @@
 p{
   text-align: center;
+  font-family: 'Book Antiqua';
 }
 
 #contact {
-  font-family: 'Book Antiqua';
+  
   font-size: 20px;
   margin-top: 500px;
 }
@@ -34,4 +35,51 @@ a{
   border: solid 1px #6C6C6C;
   width: 400px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  p{
+    text-align: center;
+    font-family: 'Book Antiqua';
+  }
+  
+  #contact {
+    font-size: 20px;
+    margin-top: 500px;
+  }
+  
+  .name{
+    font-family: 'Athelas';
+    font-size: 6vw;
+    margin-top: 8vh;
+  }
+  
+  .jap-message{
+    font-family: 'ヒラギノ角ゴ ProN';
+    font-size: 2vw;
+    margin-top: 5vh;
+  }
+  
+  .en-message{
+    font-family: 'Book Antiqua';
+    font-size: 2vw;
+    margin-bottom: 3vh;
+
+  }
+  
+  a{
+    text-decoration: none;
+    color: black;
+    font-size: 3vw;
+    
+  }
+  
+  .address{
+    border: solid 1px #6C6C6C;
+    width: 75vw;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+
 }
