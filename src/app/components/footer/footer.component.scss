@@ -1,6 +1,50 @@
-.mail{
-  width: 39px;
+.footer{
+  background-color: #FFFFFF;
+  margin-top: 300px;
+  height: 15vh;
+
+  a{
+    text-decoration: none;
+    color: black;
+    margin: 50px 150px;
+    font-family: 'Athelas';
+    font-size: 15px;
+  }
+
 }
-.insta{
-  width: 39px;
+
+
+.name{
+  font-family: 'Athelas';
+  font-size: 15px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+
 }
+.account_img{
+  position: relative;
+  background-color: #FFFFFF;
+
+
+  p{
+    text-align: center;
+    padding: 20px;
+  }
+    
+  .mail{
+    width: 39px;
+    position: absolute;
+    right: 90px;
+    top: 4px;
+    
+  }
+  .insta{
+    width: 39px;
+    position: absolute;
+    right: 40px;
+  }
+}
+
+
+
+
