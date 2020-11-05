@@ -1,9 +1,11 @@
 @import 'common';
 
+
 .text{
   @include worksText();
   transform: rotate(-180deg);
   width: 100%;
+  font-size: 1.5vw;
   writing-mode: vertical-rl;
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: vertical-rl;
@@ -16,7 +18,7 @@
   overflow: hidden;/*float解除*/
 }
 .container img{
-  width: 500px;
+  width: 30vw;
   float: left;/*画像の位置を右下にしたい場合はright*/
   margin: 0 0 0 1.2em;/*画像の周りの余白*/
 }
