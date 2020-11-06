@@ -28,11 +28,10 @@
   .text{
     @include worksText();
     font-size: 2vw;
-
+    margin-bottom: 5vh;
   }
   .container {
-    display: flex;
-    // width: $works-container-width;
+    width: $works-container-width;
     width: 100%;
     // overflow: hidden;/*float解除*/
     margin: 50vh 0 0 0;
@@ -41,10 +40,10 @@
   .container img{
     width: 70vw;
     height: 30vh;
-    float: left;/*画像の位置を右下にしたい場合はright*/
+    float: right;/*画像の位置を右下にしたい場合はright*/
   }
   .initialChar{
-    float: left;/*画像の位置を右下にしたい場合はright*/
+    float: right;/*画像の位置を右下にしたい場合はright*/
     font-size: 40px;
     margin: 0.3em 0.5em 0 0.4em;
   }
