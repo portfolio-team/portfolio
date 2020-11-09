@@ -23,6 +23,7 @@
 
 .pageNo{
   @include worksPageNo();
+  font-family: 'Athelas';
 }
 
 @media screen and (max-width: 768px) {
@@ -45,7 +46,7 @@
     float: left;/*画像の位置を右下にしたい場合はright*/
   }
   .initialChar{
-    float: right;/*画像の位置を右下にしたい場合はright*/
+    float: left;/*画像の位置を右下にしたい場合はright*/
     font-size: 8vw;
 
     margin: 0.3em 0.5em 0 0.4em;
@@ -53,6 +54,7 @@
   
   .pageNo{
     @include worksPageNo();
+    font-family: 'Athelas';
 
   }
 }

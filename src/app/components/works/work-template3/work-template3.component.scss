@@ -15,13 +15,14 @@
   margin: 0 0 0 1.2em;/*画像の周りの余白*/
 }
 .initialChar{
-  float: right;/*画像の位置を右下にしたい場合はright*/
+  float: left;/*画像の位置を右下にしたい場合はright*/
   font-size: 40px;
   margin: 0.3em 0.5em 0 0.4em;
 }
 
 .pageNo{
   @include worksPageNo();
+  font-family: 'Athelas';
 }
 
 @media screen and (max-width: 768px) {
@@ -50,6 +51,7 @@
   
   .pageNo{
     @include worksPageNo();
+    font-family: 'Athelas';
 
   }
 }

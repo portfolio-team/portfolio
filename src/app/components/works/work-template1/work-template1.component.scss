@@ -25,6 +25,7 @@
 
 .pageNo{
   @include worksPageNo();
+  font-family: 'Athelas';
 }
 
 @media screen and (max-width: 768px) {
@@ -56,6 +57,7 @@
   
   .pageNo{
     @include worksPageNo();
+    font-family: 'Athelas';
 
   }
 }

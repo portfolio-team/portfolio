@@ -31,7 +31,7 @@ li{
 
 img{
   margin-bottom: 50px;
-  width: 100%;
+  width: 15vw;
   height: auto;
  }
 }
@@ -51,18 +51,19 @@ img{
     margin-bottom: 10vh;
   }
   .works-box{
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: space-around;
-    margin: 0px;
+    flex-wrap: wrap;
+    margin: 0 auto;
   }
     li{
       list-style: none;
-      width: 30%;
+     
     }
       
       img{ 
-        max-width: 100%;
+        width: 25vw;
         height: auto;
         margin-bottom: 40px;
       }
