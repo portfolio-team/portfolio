@@ -8,14 +8,16 @@ import { DataService } from '../../data.service';
 })
 export class TopviewComponent implements OnInit {
 
-  topviewURL :string;
+  topviewPcURL :string;
+  topviewSpURL :string;
   constructor(private dataService: DataService) {
   }
 
   ngOnInit(): void {
     this.dataService.getTopview()
     .subscribe(data => {
-      this.topviewURL = data['contents'][0]['topview-image']['url'];
+      this.topviewPcURL = data['contents'][0]['topview_pc']['url'];
+      this.topviewSpURL = data['contents'][0]['topview_sp']['url'];
     });
   }
 

@@ -1,15 +1,25 @@
 
+.header{
+  position: fixed;
+  background-color: #fff;
+  width:100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
 
-.Header-title{
+  &.change {
+    background: rgba(255,255,255,0.1);
+  }
+}
+
+.header-title{
   font-family: 'Athelas';
   font-size: 1.5vw;
   margin: 17px 25px;
 }
 
 @media screen and (max-width: 768px) {
-  .Header-title{
+  .header-title{
     font-family: 'Athelas';
-    font-size: 3vw;
+    font-size: 3.8vw;
     margin: 25px 24px;;
   }
 }

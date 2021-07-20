@@ -1,16 +1,21 @@
 
-
-	img{
-    width: 100%;
-    margin-bottom: 500px;
+  .image-wrapper {
+    width: 97%;
+    margin: 58px auto 300px auto;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+    img.topview-pc{
+      width: 100%;
+      @media screen and (max-width: 768px) {
+          display: none;
+      }
+    }
+    img.topview-sp{
+      display: none;
+      width: 100%;
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+    }
   }
-
-
-
-@media screen and (max-width: 768px) {
-  img{
-    min-width:100%;
-    height: auto;
-    margin-bottom: 60vh;
-  }
-}

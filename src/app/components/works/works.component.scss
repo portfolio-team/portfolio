@@ -1,39 +1,48 @@
 @import 'common';
 
+.insta-wrapper{
+  width: 50%;
+  margin: 0 auto 300px;
+  @media screen and (max-width: 768px) {
+    width: 88%;
+  }
+  .insta-smaple{
+    width: 100%;
+  }
+}
 
 
 .works-boxes{
   width: 100%;
   height: auto;
- 
 
-.Works-title{
-  font-family: 'Athelas';
-  color: #2E2D2D;
-  letter-spacing: 3.25px;
-  font-size: 2vw;
-  text-align: center;
-  margin-bottom: 15vh;
-}
+  .Works-title{
+    font-family: 'Athelas';
+    color: #2E2D2D;
+    letter-spacing: 3.25px;
+    font-size: 2vw;
+    text-align: center;
+    margin-bottom: 15vh;
+  }
 
-.works-box{
-  display: flex;
-  width: 55%;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
-  
-li{
-  list-style: none;
-  
-}
+  .works-box{
+    display: flex;
+    width: 55%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+    
+  li{
+    list-style: none;
+    
+  }
 
-img{
-  margin-bottom: 50px;
-  width: 15vw;
-  height: auto;
- }
+  img{
+    margin-bottom: 50px;
+    width: 15vw;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 768px) {

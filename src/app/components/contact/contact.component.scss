@@ -1,99 +1,74 @@
-p{
-  text-align: center;
-  font-size: 1vw;
-}
-
-#contact {
-  font-family: 'Athelas';
-  margin-top: 500px;
-
+.contact{
+  margin-bottom: 250px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 190px;
+  }
   p{
     text-align: center;
-    font-size: 2vw;
+    font-size: 1vw;
+    @media screen and (max-width: 768px) {
+      font-size: 3vw;
+    }
   }
-}
 
-.name{
-  font-family: 'Athelas';
-  font-size: 2vw;
-  margin-top: 50px;
-}
-
-.jap-message{
-  font-family: 'ヒラギノ角ゴ ProN';
-  margin-top: 3vw;
-  font-size: 1.2vw;
-}
-
-.en-message{
-  font-family: 'Athelas';
-  margin-bottom: 2vw;
-  font-size: 1.3vw;
-}
-
-a{
-  text-decoration: none;
-  color: black;
-  
-  
-}
-
-.address{
-  border: solid 1px #6C6C6C;
-  width: 40vw;
-  padding: 10px;
-  margin: 0 auto 300px;
-
-}
-
-@media screen and (max-width: 768px) {
-  p{
-    text-align: center;
-    font-size: 3vw;
-  }
-  
-  #contact {
-    margin-top: 500px;
+  .title {
     font-family: 'Athelas';
-    
+    margin-top: 100px;
+
     p{
       text-align: center;
-      font-size: 7vw;
+      font-size: 2.5vw;
+      @media screen and (max-width: 768px) {
+        font-size: 7vw;
+      }
     }
-    
   }
-  
+
   .name{
     font-family: 'Athelas';
-    font-size: 6vw;
-    margin-top: 8vh;
+    font-size: 2vw;
+    margin-top: 50px;
+    @media screen and (max-width: 768px) {
+      font-size: 6vw;
+      margin-top: 8vh;
+    }
   }
-  
+
   .jap-message{
     font-family: 'ヒラギノ角ゴ ProN';
-    font-size: 3vw;
-    margin-top: 5vh;
+    margin-top: 3vw;
+    font-size: 1.2vw;
+    @media screen and (max-width: 768px) {
+      font-size: 3vw;
+      margin-top: 5vh;
+    }
   }
-  
-  .en-message{
-    font-family: 'Book Antiqua';
-    font-size: 2.8vw;
-    margin-bottom: 3vh;
 
+  .en-message{
+    font-family: 'Athelas';
+    margin-bottom: 2vw;
+    font-size: 1.3vw;
+    @media screen and (max-width: 768px) {
+      font-size: 2.8vw;
+      margin-bottom: 3vh;
+    }
   }
-  
+
   a{
     text-decoration: none;
     color: black;
   }
-  
+
   .address{
     border: solid 1px #6C6C6C;
-    width: 75vw;
-    padding: 8px;
-    margin: 0 auto 150px;
+    width: 40vw;
+    padding: 10px;
+    margin: 0 auto;
+    @media screen and (max-width: 768px) {
+      width: 75vw;
+      padding: 8px;
+      margin: 0 auto;
+    }
 
   }
-
-
 }
