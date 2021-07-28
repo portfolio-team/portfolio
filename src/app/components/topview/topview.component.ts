@@ -14,10 +14,13 @@ export class TopviewComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.dataService.getTopview()
+    this.dataService.getTopviewPC()
     .subscribe(data => {
-      this.topviewPcURL = data['contents'][0]['topview_pc']['url'];
-      this.topviewSpURL = data['contents'][0]['topview_sp']['url'];
+      this.topviewPcURL = data['topview_pc']['url'] + "?fit=clip&w=1270&h=1270";
+    });
+    this.dataService.getTopviewSP()
+    .subscribe(data => {
+      this.topviewSpURL = data['topview_sp']['url'] + "?fit=clip&w=570&h=570";
     });
   }
 

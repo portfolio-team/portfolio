@@ -9,6 +9,7 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
 import { HeaderComponent } from './components/header/header.component';
 import { TopviewComponent } from './components/topview/topview.component';
 import { WorksComponent } from './components/works/works.component';
+import { InstaComponent } from './components/insta/insta.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 
@@ -18,6 +19,7 @@ import { FooterComponent } from './components/footer/footer.component';
     HeaderComponent,
     TopviewComponent,
     WorksComponent,
+    InstaComponent,
     ContactComponent,
     FooterComponent,
   ],
