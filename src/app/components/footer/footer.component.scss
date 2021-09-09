@@ -1,108 +1,95 @@
 .footer{
+  position: relative;
   background-color: #FFFFFF;
-  height: 20vh;
-  padding: 25px;
+  padding: 43px;
+  @media screen and (max-width: 768px) {
+    height: 100%;
+    padding: 10px;
+  }
 
   .name{
     font-family: 'Athelas';
     font-size: 1.5vw;
     margin: 0 0 20px 10vw;
+    @media screen and (max-width: 768px) {
+      font-size: 5vw;
+      margin: 3vh 0 3vh 2vw;
+    }
   }
   p{
-    
+
     font-family: 'Athelas';
     font-size: 1.5vw;
-  
+
   a{
     text-decoration: none;
     color: black;
     margin: 0 13vw;
     font-family: 'Athelas';
+    @media screen and (max-width: 768px) {
+      font-size: 3vw;
+    }
   }
   }
 
-  
-}
   .account_img{
-    position: relative;
+    position: absolute;
+    top: 33%;
+    right: 1%;
     background-color: #FFFFFF;
-    height: 10vh;
 
-      
+    @media screen and (max-width: 768px) {
+      position: static;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 15px 0;
+    }
+
     .mail{
       width: 3vw;
       position: absolute;
       right: 12vw;
       top: 4px;
       margin-right: 2vw;
-      
+      @media screen and (max-width: 768px) {
+        position: static;
+        width: 7.5vw;
+        margin: 0 12.5px;
+      }
     }
     .insta{
       width: 3vw;
       position: absolute;
       right: 10vw;
+      @media screen and (max-width: 768px) {
+        position: static;
+        width: 7.5vw;
+        margin: 0 12.5px;
+      }
     }
-    
-    p{
-      text-align: center;
-      padding: 20px;
-      font-family: 'Athelas';
-      font-size: 1.5vw;
-      
+
+    // p{
+    //   text-align: center;
+    //   padding: 20px;
+    //   font-family: 'Athelas';
+    //   font-size: 1.5vw;
+
+    // }
+  }
+
+  .copyright{
+    text-align: center;
+    font-family: 'Athelas';
+    font-size: 1.5vw;
+    @media screen and (max-width: 768px) {
+      font-size: 3.5vw;
+      margin-bottom: 1.5vh;
     }
   }
 
 
-@media screen and (max-width: 768px) {
-  .footer{
-    background-color: #FFFFFF;
-    height: 100%;
-    padding: 10px;
-    
-  
-    .name{
-      font-family: 'Athelas';
-      font-size: 5vw;
-      margin: 3vh 0 3vh 2vw;
-    }
-  
-    a{
-      text-decoration: none;
-      color: black;
-      font-family: 'Athelas';
-      font-size: 3vw;
-    }
-  }
-  
-    .account_img{
-      position: relative;
-      background-color: #FFFFFF;
-      height: 10vh;
-      padding: 10px;
-
-    
-      p{
-        text-align: center;
-        padding: 0;
-        word-spacing: 1vw;
-        margin-top: 3vh;
-      }
-        
-      .mail{
-        width: 5vw;
-        position: absolute;
-        right: 13vw;
-        top: 1.9vh;
-      
-      }
-      .insta{
-        width: 5vw;
-        position: absolute;
-        right: 8vw;
-      }
-    }
-  }
-
-
+}
 
 

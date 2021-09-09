@@ -3,14 +3,15 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --configuration=dev",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "scully": "scully",
     "scully:serve": "scully serve",
-    "prebuild": "tsc scripts/prebuild.ts && node scripts/prebuild.js"
+    "prebuild": "tsc scripts/prebuild.ts && node scripts/prebuild.js",
+    "ntserve": "npx netlify dev && start"
   },
   "private": true,
   "dependencies": {
@@ -26,6 +27,9 @@
     "@scullyio/ng-lib": "^1.0.0-beta.2",
     "@scullyio/scully": "^1.0.0-beta.3",
     "angular-http-server": "^1.9.0",
+    "axios": "^0.21.1",
+    "netlify-cli": "^5.2.0",
+    "netlify-lambda": "^2.0.12",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

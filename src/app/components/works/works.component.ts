@@ -35,10 +35,10 @@ export class WorksComponent implements OnInit {
   ngOnInit(): void {
     this.dataService.getWorks()
     .subscribe(data => {
-      this.factory1 = this.resolver.resolveComponentFactory(WorkTemplate1Component);
-      this.factory2 = this.resolver.resolveComponentFactory(WorkTemplate2Component);
-      this.factory3 = this.resolver.resolveComponentFactory(WorkTemplate3Component);
-      this.getWorkContent(data['contents']);
+      // this.factory1 = this.resolver.resolveComponentFactory(WorkTemplate1Component);
+      // this.factory2 = this.resolver.resolveComponentFactory(WorkTemplate2Component);
+      // this.factory3 = this.resolver.resolveComponentFactory(WorkTemplate3Component);
+      // this.getWorkContent(data['contents']);
     });
 
   }
